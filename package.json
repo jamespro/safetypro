@@ -1,18 +1,29 @@
 {
-  "name": "SafetyPro by JamesPro",
+  "name": "safetypro",
   "version": "1.0.0",
-  "description": "",
+  "description": "SafetyPro App",
   "main": "app.js",
-  "scripts": {
+   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "",
-  "license": "MIT",
+ "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamespro/safetypro.git"
+  },
+  "keywords": [
+    "safety"
+  ],
+  "author": "James Prickitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamespro/safetypro/issues"
+  },
+  "homepage": "https://github.com/jamespro/safetypro#readme",
   "dependencies": {
     "@azure/cognitiveservices-computervision": "^8.1.0",
     "async": "^3.2.0",
-    "cloudinary": "^1.26.1",
+    "cloudinary": "^1.26.2",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
