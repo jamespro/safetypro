@@ -77,12 +77,12 @@ app.post("/", upload.single("file-to-upload"), async (req, res) => {
         `${objects.length} object${objects.length == 1 ? "" : "s"} found:`
       );
 // I should re-render result.ejs with the values
-      resultsintro = `${objects.length} object${objects.length == 1 ? "" : "s"} found:`;
+        resultsintro = `${objects.length} object${objects.length == 1 ? "" : "s"} found:`;
       for (const obj of objects) {
         if (obj.object === "stop sign") {
           topObjectCount = topObjectCount + 1;
         }
-          resultsfound = resultsfound + `<p>${obj.object} (${obj.confidence.toFixed(2)}) at ${formatRectObjects(obj.rectangle)}</p>`
+        //   resultsfound = resultsfound + `<p>${obj.object} (${obj.confidence.toFixed(2)}) at ${formatRectObjects(obj.rectangle)}</p>`
 
         console.log(
           `    ${obj.object} (${obj.confidence.toFixed(2)}) at ${formatRectObjects(obj.rectangle)}`
@@ -102,7 +102,11 @@ app.post("/", upload.single("file-to-upload"), async (req, res) => {
       );
     }
 
-    res.render("result.ejs", { count: topObjectCount, img: objectURL });
+      res.render("result.ejs", {
+          count: topObjectCount,
+          img: objectURL,
+          objectsFound: objects
+      });
   } catch (err) {
     console.log(err);
   }

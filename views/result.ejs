@@ -15,8 +15,15 @@
         <p>
            <img src="<%= img%>" alt="uploaded image" />
         </p>
+        <p id="results-count"><%= count%> stop signs</p>
         <p id="results-intro"><%= resultsintro%></p>
-        <div id="results-found"><%= resultsfound%></div>
+        <div id="results-found">
+            <ul>
+                <% for(var i=0; i < objectsFound.length; i++) { %>
+                    <li><%= objectsFound[i].object%> (<%= objectsFound[i].confidence.toFixed(2)*100 %>%) </li>
+                <% } %>
+            </ul>
+        </div>
     </section>
     <section>
         <form action="/" enctype="multipart/form-data" method="post">
