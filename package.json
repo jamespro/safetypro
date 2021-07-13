@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "SafetyPro App",
   "main": "app.js",
-   "scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
- "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/jamespro/safetypro.git"
   },
@@ -23,6 +23,7 @@
   "dependencies": {
     "@azure/cognitiveservices-computervision": "^8.1.0",
     "async": "^3.2.0",
+    "axios": "^0.21.1",
     "cloudinary": "^1.26.2",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
