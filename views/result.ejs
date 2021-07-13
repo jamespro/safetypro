@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-      <img src="<%= img%>" alt="uploaded image" />
-
-      <form action="/" enctype="multipart/form-data" method="post">
-      <input type="file" name="file-to-upload" />
-      <input type="submit" value="Upload" />
-    </form>
+    <header>
+        <h1>SafetyPro</h1>
+        <h2>Results</h2>
+    </header>
+    <section>
+        <p>
+           <img src="<%= img%>" alt="uploaded image" />
+        </p>
+        <p id="results-intro"><%= resultsintro%></p>
+        <div id="results-found"><%= resultsfound%></div>
+    </section>
+    <section>
+        <form action="/" enctype="multipart/form-data" method="post">
+            <input type="file" name="file-to-upload" />
+            <input type="submit" value="Upload" />
+        </form>
+    </section>
   </body>
 </html>
