@@ -1,5 +1,12 @@
 # SafetyPro
 
+Recognize stop signs and other safety-related objects from photos using Microsoft Cognitive Services! Upload an image and find out whether there are safety concerns to be aware of.
+
+* image detection
+* computer vision
+
+Sample images are provided in the public/img folder.
+
 ---
 
 ## Install
