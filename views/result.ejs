@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-        <h1>SafetyPro</h1>
+        <h1><a href="/">SafetyPro</a></h1>
         <h2>Results</h2>
     </header>
     <section>
@@ -20,7 +20,7 @@
         <div id="results-found">
             <ul>
                 <% for(var i=0; i < objectsFound.length; i++) { %>
-                    <li><%= objectsFound[i].object%> (<%= objectsFound[i].confidence.toFixed(2)*100 %>%) </li>
+                    <li><%= objectsFound[i].object%> (<%= objectsFound[i].confidence.toFixed(2)*100 %> % confidence) </li>
                 <% } %>
             </ul>
         </div>
