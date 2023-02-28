@@ -7,6 +7,8 @@ Recognize stop signs and other safety-related objects from photos using Microsof
 
 Sample images are provided in the public/img folder.
 
+I kept the layout intentionally simple because it is a tech demo.
+
 ---
 ## Tech Used
 

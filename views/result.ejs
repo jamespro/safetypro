@@ -8,8 +8,9 @@
   </head>
   <body>
     <header>
-        <h1><a href="/">SafetyPro</a></h1>
-        <h2>Results</h2>
+        <p class="logo"><a href="/">SafetyPro</a></p>
+        <p class="tagline">Are there stop signs in your image?</p>
+        <h1>Results</h1>
     </header>
     <section>
         <p>
@@ -26,9 +27,18 @@
         </div>
     </section>
     <section>
-        <form action="/" enctype="multipart/form-data" method="post">
-            <input type="file" name="file-to-upload" />
-            <input type="submit" value="Upload" />
+        <h3>Upload an image and SafetyPro will analyze it:</h3>
+        <form id="upload" class="upload" action="/" enctype="multipart/form-data" method="post">
+            <div>
+                <p>
+                    <input type="file" name="file-to-upload">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="submit" value="Upload">
+                </p>
+            </div>
         </form>
     </section>
   </body>

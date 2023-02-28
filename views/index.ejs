@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SafetyPro</title>
+    <title>SafetyPro: Are there stop signs in your image?</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Please upload an image below:</h1>
-    <form action="/" enctype="multipart/form-data" method="post">
-      <input type="file" name="file-to-upload">
-      <input type="submit" value="Upload">
-    </form>  
+    <header>
+        <p class="logo">SafetyPro</p>
+        <p class="tagline">Are there stop signs in your image?</p>
+        <h1>Analyze Your Image</h1>
+    </header>
+    <section>
+        <h3>Upload an image and SafetyPro will analyze it:</h3>
+        <form id="upload" class="upload" action="/" enctype="multipart/form-data" method="post">
+            <div>
+                <p>
+                    <input type="file" name="file-to-upload">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="submit" value="Upload">
+                </p>
+            </div>
+        </form>
+    </section>
   </body>
 </html>
