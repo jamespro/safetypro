@@ -44,6 +44,8 @@ Other possible updates may include:
 
 ## Run
 
-`npm start`
+* `npm start`
+* Go to http://localhost:2122
+* If you need example images to try it out, navigate to public/img/
 
 ---
